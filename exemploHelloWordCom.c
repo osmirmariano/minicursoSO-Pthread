@@ -3,13 +3,11 @@
 
 	void *helloWorld() {
 		printf("\nHello World\n\n");
-		pthread_exit(NULL);
 	}
 
-	int main ( ){
+	int main( ){
 	 	pthread_t thread;
-	 	int flag;;
-
+	 	int flag;
 	 	//Criando uma thread
 	 	flag = pthread_create(&thread, NULL, helloWorld, NULL);
 	 	//Condição para para ocorra um erro ao criar a thread
